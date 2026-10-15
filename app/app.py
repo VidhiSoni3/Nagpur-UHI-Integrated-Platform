@@ -1,3 +1,4 @@
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import joblib
@@ -222,6 +223,10 @@ except Exception:
 # ---------------------------------------------------------
 with st.sidebar:
     st.markdown("## 🌡️ Nagpur Urban Heat")
+    st.markdown(
+        '[🗺️ Open spatial heat maps and hotspot analysis](https://sanskruti1204-nagpur-uhi-dashboard-app-y8mcqy.streamlit.app/)',
+        unsafe_allow_html=False,
+    )
     st.caption("Summer 2026")
 
     st.markdown("---")
